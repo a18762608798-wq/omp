@@ -1,0 +1,1 @@
+/home/dell/.codex/AGENTS.md

@@ -1,0 +1,37 @@
+tools:
+  approvalMode: yolo
+memory:
+  backend: mnemopi
+autolearn:
+  enabled: true
+browser:
+  enabled: true
+computer:
+  enabled: true
+lsp:
+  enabled: false
+astEdit:
+  enabled: false
+astGrep:
+  enabled: false
+mnemopi:
+  scoping: global
+  autoRecall: true
+  autoRetain: true
+  embeddingModel: qwen3-embedding:8b
+  embeddingApiUrl: http://127.0.0.1:11434/v1
+disabledProviders:
+  - ollama
+  - lm-studio
+  - llama.cpp
+enabledModels:
+  - openai-codex/gpt-6.2-sol
+modelRoles:
+  default: openai-codex/gpt-6.2-sol
+  smol: openai-codex/gpt-6.2-sol
+  memory: openai-codex/gpt-6.2-sol
+  commit: openai-codex/gpt-6.2-sol
+update:
+  auto: false
+marketplace:
+  autoUpdate: "off"

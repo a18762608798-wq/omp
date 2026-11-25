@@ -1,0 +1,36 @@
+# Configuration allowlist: ignore credentials, sessions, databases, logs,
+# caches, and any new runtime files by default.
+/*
+!/.gitignore
+!/agent/
+/agent/*
+!/agent/AGENTS.md
+!/agent/config.yml
+!/agent/models.yml
+!/agent/skills/
+!/agent/rules/
+!/agent/prompts/
+!/agent/commands/
+!/agent/extensions/
+!/agent/plugins/
+
+# Never commit secrets or generated runtime files inside allowed paths
+.env
+.env.*
+auth.json
+credentials.json
+*.pem
+*.key
+*.log
+*.sqlite*
+*.db
+*.db-*
+*.jsonl
+*.lock
+*.bak
+*.bak.*
+*.bak-*
+.DS_Store
+node_modules/
+__pycache__/
+*.py[cod]
